@@ -1,4 +1,14 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 15.272 sec
+Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 17.296 sec <<< FAILURE!
+trxnHistoryErrorStatus404Test(org.noon.TrxnHistoryTests)  Time elapsed: 1.649 sec  <<< FAILURE!
+java.lang.AssertionError: expected [Non message available] but found [No message available]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at org.noon.TrxnHistoryTests.trxnHistoryErrorStatus404Test(TrxnHistoryTests.java:77)
+

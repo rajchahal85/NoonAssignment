@@ -61,18 +61,19 @@ public class TrxnHistoryTests extends BaseClass {
     public void trxnHistoryErrorStatus404Test()
     {
         RequestSpecification request = given().
+                log().all().
                 contentType(ContentType.JSON).
                 queryParam("token", token);
 
         Response response = request.when().
                 get("user/txn/historyy").
                 then().
-                statusCode(404).
+                statusCode(404).log().all().
                 extract().response();
 
         JsonPath jsonPath = new JsonPath(response.asString());
         String errorMessage = jsonPath.getJsonObject("message");
 
-        Assert.assertEquals(errorMessage, "No message available");
+        Assert.assertEquals(errorMessage, "Non message available");
     }
 }

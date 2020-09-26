@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Suite1]">
+  <test thread-count="5" verbose="0" name="NoonAssignment(failed)">
+    <classes>
+      <class name="org.noon.TrxnHistoryTests">
+        <methods>
+          <include name="trxnHistoryErrorStatus404Test"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- org.noon.TrxnHistoryTests -->
+    </classes>
+  </test> <!-- NoonAssignment(failed) -->
+</suite> <!-- Failed suite [Suite1] -->

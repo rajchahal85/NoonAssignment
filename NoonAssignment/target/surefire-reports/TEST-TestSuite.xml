@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="12.899" tests="5" errors="0" skipped="0" failures="0">
+<testsuite name="TestSuite" time="13.504" tests="5" errors="0" skipped="0" failures="1">
   <properties>
     <property name="idea.version" value="2020.2.2"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -63,9 +63,49 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="validateSuccess" classname="org.noon.ValidateTests" time="5.417"/>
-  <testcase name="validateError" classname="org.noon.ValidateTests" time="2.602"/>
-  <testcase name="trxnHistorySuccess" classname="org.noon.TrxnHistoryTests" time="1.57"/>
-  <testcase name="trxnHistoryError" classname="org.noon.TrxnHistoryTests" time="1.583"/>
-  <testcase name="trxnHistoryErrorStatus404Test" classname="org.noon.TrxnHistoryTests" time="1.727"/>
+  <testcase name="validateSuccess" classname="org.noon.ValidateTests" time="7.4"/>
+  <testcase name="validateError" classname="org.noon.ValidateTests" time="1.405"/>
+  <testcase name="trxnHistorySuccess" classname="org.noon.TrxnHistoryTests" time="1.55"/>
+  <testcase name="trxnHistoryError" classname="org.noon.TrxnHistoryTests" time="1.5"/>
+  <testcase name="trxnHistoryErrorStatus404Test" classname="org.noon.TrxnHistoryTests" time="1.649">
+    <failure message="expected [Non message available] but found [No message available]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Non message available] but found [No message available]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at org.testng.Assert.assertEquals(Assert.java:639)
+	at org.noon.TrxnHistoryTests.trxnHistoryErrorStatus404Test(TrxnHistoryTests.java:77)
+</failure>
+    <system-out><![CDATA[Request method:	GET
+Request URI:	https://interview.noonpay.biz/user/txn/historyy?token=NPONSUJA189CZUNA
+Proxy:			<none>
+Request params:	<none>
+Query params:	token=NPONSUJA189CZUNA
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 404 
+Server: nginx/1.13.12
+Date: Sat, 26 Sep 2020 14:59:02 GMT
+Content-Type: application/json;charset=UTF-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+Vary: Accept-Encoding
+Strict-Transport-Security: max-age=15724800; includeSubDomains
+Content-Encoding: gzip
+
+{
+    "timestamp": 1601132342276,
+    "status": 404,
+    "error": "Not Found",
+    "message": "No message available",
+    "path": "/user/txn/historyy"
+}
+]]></system-out>
+  </testcase>
 </testsuite>
