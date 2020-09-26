@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite1" duration-ms="13693" started-at="2020-09-26T11:50:14 IST" finished-at="2020-09-26T11:50:28 IST">
+    <groups>
+    </groups>
+    <test name="NoonAssignment" duration-ms="13693" started-at="2020-09-26T11:50:14 IST" finished-at="2020-09-26T11:50:28 IST">
+      <class name="org.noon.TrxnHistoryTests">
+        <test-method status="PASS" signature="setup()[pri:0, instance:org.noon.TrxnHistoryTests@6093dd95]" name="setup" is-config="true" duration-ms="0" started-at="2020-09-26T11:50:23 IST" finished-at="2020-09-26T11:50:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="trxnHistorySuccess()[pri:1, instance:org.noon.TrxnHistoryTests@6093dd95]" name="trxnHistorySuccess" duration-ms="1565" started-at="2020-09-26T11:50:23 IST" finished-at="2020-09-26T11:50:24 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- trxnHistorySuccess -->
+        <test-method status="PASS" signature="trxnHistoryError()[pri:2, instance:org.noon.TrxnHistoryTests@6093dd95]" name="trxnHistoryError" duration-ms="1587" started-at="2020-09-26T11:50:24 IST" finished-at="2020-09-26T11:50:26 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- trxnHistoryError -->
+        <test-method status="PASS" signature="trxnHistoryErrorStatus404Test()[pri:3, instance:org.noon.TrxnHistoryTests@6093dd95]" name="trxnHistoryErrorStatus404Test" duration-ms="1727" started-at="2020-09-26T11:50:26 IST" finished-at="2020-09-26T11:50:28 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- trxnHistoryErrorStatus404Test -->
+      </class> <!-- org.noon.TrxnHistoryTests -->
+      <class name="org.noon.ValidateTests">
+        <test-method status="PASS" signature="setup()[pri:0, instance:org.noon.ValidateTests@6d4b1c02]" name="setup" is-config="true" duration-ms="749" started-at="2020-09-26T11:50:14 IST" finished-at="2020-09-26T11:50:15 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="validateSuccess()[pri:1, instance:org.noon.ValidateTests@6d4b1c02]" name="validateSuccess" duration-ms="5413" started-at="2020-09-26T11:50:15 IST" finished-at="2020-09-26T11:50:20 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateSuccess -->
+        <test-method status="PASS" signature="validateError()[pri:2, instance:org.noon.ValidateTests@6d4b1c02]" name="validateError" duration-ms="2601" started-at="2020-09-26T11:50:20 IST" finished-at="2020-09-26T11:50:23 IST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validateError -->
+      </class> <!-- org.noon.ValidateTests -->
+    </test> <!-- NoonAssignment -->
+  </suite> <!-- Suite1 -->
+</testng-results>

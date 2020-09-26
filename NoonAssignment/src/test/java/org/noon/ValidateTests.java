@@ -27,14 +27,12 @@ public class ValidateTests  extends BaseClass {
         Response response = request.when().
                                         post("/user/validate").
                                     then().
-                                        log().all().
                                         statusCode(200).
                                         extract().response();
 
         JsonPath jsonPath = new JsonPath(response.asString());
         boolean success =  jsonPath.get("success");
         String errorMessage = jsonPath.get("errorMessage");
-        System.out.println(success + "-" + errorMessage);
 
         Assert.assertEquals(success, false);
         Assert.assertEquals(errorMessage, "Invalid Credentials.");
@@ -42,16 +40,16 @@ public class ValidateTests  extends BaseClass {
 
     @Test(priority = 1)
     public void validateSuccess()
-    {   RequestSpecification request = given().
+    {
+        RequestSpecification request = given().
                 contentType(ContentType.JSON).
                 body("{\n" + "    \"email\": \"test@gmail.com\",\n" + "    \"password\": \"Qwerty123\"\n" + "}");
 
         Response response = request.when().
-                post("/user/validate").
-                then().
-                log().all().
-                statusCode(200).
-                extract().response();
+                                        post("/user/validate").
+                                    then().
+                                        statusCode(200).
+                                        extract().response();
 
         JsonPath jsonPath = new JsonPath(response.asString());
         boolean success =  jsonPath.get("success");

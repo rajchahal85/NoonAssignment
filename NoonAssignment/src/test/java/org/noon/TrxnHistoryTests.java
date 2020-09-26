@@ -22,7 +22,7 @@ public class TrxnHistoryTests extends BaseClass {
     @Test(priority = 1)
     public void trxnHistorySuccess()
     {
-        RequestSpecification request = given().log().all().
+        RequestSpecification request = given().
                                             contentType(ContentType.JSON).
                                             queryParam("token", token);
 
@@ -30,7 +30,6 @@ public class TrxnHistoryTests extends BaseClass {
                                         get("user/txn/history").
                                     then().
                                         statusCode(200).
-                                        log().all().
                                         extract().response();
 
         JsonPath jsonPath = new JsonPath(response.asString());
@@ -50,7 +49,6 @@ public class TrxnHistoryTests extends BaseClass {
                                         get("user/txn/history").
                                     then().
                                         statusCode(200).
-                                        log().all().
                                         extract().response();
 
         JsonPath jsonPath = new JsonPath(response.asString());
@@ -60,7 +58,7 @@ public class TrxnHistoryTests extends BaseClass {
     }
 
     @Test(priority = 3)
-    public void trxnHistoryErrorStatus404()
+    public void trxnHistoryErrorStatus404Test()
     {
         RequestSpecification request = given().
                 contentType(ContentType.JSON).
@@ -70,7 +68,6 @@ public class TrxnHistoryTests extends BaseClass {
                 get("user/txn/historyy").
                 then().
                 statusCode(404).
-                log().all().
                 extract().response();
 
         JsonPath jsonPath = new JsonPath(response.asString());
