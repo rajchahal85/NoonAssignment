@@ -1,0 +1,10 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Suite1" verbose="1" >
+    <test name="NoonAssignment">
+        <classes>
+            <class name="org.noon.ValidateTests"/>
+            <class name="org.noon.TrxnHistoryTests"/>
+        </classes>
+    </test>
+</suite>
