@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="TestSuite" time="13.504" tests="5" errors="0" skipped="0" failures="1">
+<testsuite name="TestSuite" time="11.151" tests="5" errors="0" skipped="0" failures="0">
   <properties>
     <property name="idea.version" value="2020.2.2"/>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
@@ -30,7 +30,7 @@
     <property name="maven.ext.class.path" value="C:\Users\RajeshKumar\AppData\Local\JetBrains\IntelliJ IDEA Community Edition 2020.1\plugins\maven\lib\maven-event-listener.jar"/>
     <property name="classworlds.conf" value="C:\Users\RajeshKumar\AppData\Local\JetBrains\IntelliJ IDEA Community Edition 2020.1\plugins\maven\lib\maven3\bin\m2.conf"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_201\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\app\RajeshKumar\product\12.1.0\client_1;C:\app\client\RajeshKumar\product\12.2.0\client_1;C:\app\client\RajeshKumar\product\12.2.0\client_1\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Python37-32\Scripts\;C:\Program Files (x86)\Python37-32\;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Users\RajeshKumar\AppData\Local\Microsoft\WindowsApps;C:\Users\RajeshKumar\AppData\Local\atom\bin;C:\Personal\Apps\Launchy;C:\Users\RajeshKumar\AppData\Roaming\npm;C:\Users\RajeshKumar\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Users\RajeshKumar\AppData\Local\JetBrains\IntelliJ IDEA Community Edition 2020.1\bin;;C:\Users\RajeshKumar\AppData\Local\Programs\Microsoft VS Code\bin;C:\Personal\Coding\Tools\apache-maven-3.6.3\bin;C:\Users\RajeshKumar\.dotnet\tools;."/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk1.8.0_201\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\app\RajeshKumar\product\12.1.0\client_1;C:\app\client\RajeshKumar\product\12.2.0\client_1;C:\app\client\RajeshKumar\product\12.2.0\client_1\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Python37-32\Scripts\;C:\Program Files (x86)\Python37-32\;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Docker\Docker\Resources\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Amazon\AWSCLIV2\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\dotnet\;C:\Program Files\Microsoft SQL Server\Client SDK\ODBC\170\Tools\Binn\;C:\Program Files\Microsoft SQL Server\140\Tools\Binn\;C:\Personal\Learning\allure-commandline-2.13.5\allure-2.13.5\bin;C:\Users\RajeshKumar\AppData\Local\Microsoft\WindowsApps;C:\Users\RajeshKumar\AppData\Local\atom\bin;C:\Personal\Apps\Launchy;C:\Users\RajeshKumar\AppData\Roaming\npm;C:\Users\RajeshKumar\AppData\Local\Microsoft\WindowsApps;C:\Program Files\Java\jdk1.8.0_201\bin;C:\Users\RajeshKumar\AppData\Local\JetBrains\IntelliJ IDEA Community Edition 2020.1\bin;;C:\Users\RajeshKumar\AppData\Local\Programs\Microsoft VS Code\bin;C:\Personal\Coding\Tools\apache-maven-3.6.3\bin;C:\Users\RajeshKumar\.dotnet\tools;."/>
     <property name="maven.conf" value="C:\Users\RajeshKumar\AppData\Local\JetBrains\IntelliJ IDEA Community Edition 2020.1\plugins\maven\lib\maven3/conf"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.class.version" value="52.0"/>
@@ -63,49 +63,9 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase name="validateSuccess" classname="org.noon.ValidateTests" time="7.4"/>
-  <testcase name="validateError" classname="org.noon.ValidateTests" time="1.405"/>
-  <testcase name="trxnHistorySuccess" classname="org.noon.TrxnHistoryTests" time="1.55"/>
-  <testcase name="trxnHistoryError" classname="org.noon.TrxnHistoryTests" time="1.5"/>
-  <testcase name="trxnHistoryErrorStatus404Test" classname="org.noon.TrxnHistoryTests" time="1.649">
-    <failure message="expected [Non message available] but found [No message available]" type="java.lang.AssertionError">java.lang.AssertionError: expected [Non message available] but found [No message available]
-	at org.testng.Assert.fail(Assert.java:99)
-	at org.testng.Assert.failNotEquals(Assert.java:1037)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-	at org.testng.Assert.assertEquals(Assert.java:122)
-	at org.testng.Assert.assertEquals(Assert.java:629)
-	at org.testng.Assert.assertEquals(Assert.java:639)
-	at org.noon.TrxnHistoryTests.trxnHistoryErrorStatus404Test(TrxnHistoryTests.java:77)
-</failure>
-    <system-out><![CDATA[Request method:	GET
-Request URI:	https://interview.noonpay.biz/user/txn/historyy?token=NPONSUJA189CZUNA
-Proxy:			<none>
-Request params:	<none>
-Query params:	token=NPONSUJA189CZUNA
-Form params:	<none>
-Path params:	<none>
-Headers:		Accept=*/*
-				Content-Type=application/json; charset=UTF-8
-Cookies:		<none>
-Multiparts:		<none>
-Body:			<none>
-HTTP/1.1 404 
-Server: nginx/1.13.12
-Date: Sat, 26 Sep 2020 14:59:02 GMT
-Content-Type: application/json;charset=UTF-8
-Transfer-Encoding: chunked
-Connection: keep-alive
-Vary: Accept-Encoding
-Strict-Transport-Security: max-age=15724800; includeSubDomains
-Content-Encoding: gzip
-
-{
-    "timestamp": 1601132342276,
-    "status": 404,
-    "error": "Not Found",
-    "message": "No message available",
-    "path": "/user/txn/historyy"
-}
-]]></system-out>
-  </testcase>
+  <testcase name="validateSuccess" classname="org.noon.ValidateTests" time="5.145"/>
+  <testcase name="validateError" classname="org.noon.ValidateTests" time="1.37"/>
+  <testcase name="trxnHistorySuccess" classname="org.noon.TrxnHistoryTests" time="1.448"/>
+  <testcase name="trxnHistoryError" classname="org.noon.TrxnHistoryTests" time="1.292"/>
+  <testcase name="trxnHistoryErrorStatus404Test" classname="org.noon.TrxnHistoryTests" time="1.896"/>
 </testsuite>
