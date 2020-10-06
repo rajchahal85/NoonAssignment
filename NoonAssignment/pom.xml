@@ -68,6 +68,12 @@
                 <argLine>
                     -javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
                 </argLine>
+              <systemProperties>
+                <property>
+                  <name>allure.results.directory</name>
+                <value>/var/lib/jenkins/workspace/Noon Assignment/NoonAssignment/allure-results</value>
+              </property>
+              </systemProperties>
             </configuration>
             <dependencies>
                 <dependency>
