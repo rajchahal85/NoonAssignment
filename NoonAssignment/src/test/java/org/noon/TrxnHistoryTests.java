@@ -74,6 +74,6 @@ public class TrxnHistoryTests extends BaseClass {
         JsonPath jsonPath = new JsonPath(response.asString());
         String errorMessage = jsonPath.getJsonObject("message");
 
-        Assert.assertEquals(errorMessage, "No message available");
+        Assert.assertEquals(errorMessage, "Non message available");
     }
 }
