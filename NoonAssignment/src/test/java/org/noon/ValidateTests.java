@@ -20,7 +20,8 @@ public class ValidateTests  extends BaseClass {
     @Test(priority = 2)
     public void validateError()
     {
-        RequestSpecification request = given().filter(new AllureRestAssured()).
+        RestAssured.requestSpecification = new RequestSpecBuilder().build().filter(new AllureRestAssured());
+        RequestSpecification request = given().
                                             contentType(ContentType.JSON).
                                             body("{\n" + "    \"email\": \"test@gmail.com\",\n" + "    \"password\": \"wrong\"\n" + "}");
 
